@@ -51,6 +51,9 @@ Products
 
 <hr/>
 
+<p><strong>Response DataTable Server Side ada pada Halaman Dashboard</strong></p>
+
+<hr/>
 
 
 # CodeIgniter 4 Application Starter
