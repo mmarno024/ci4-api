@@ -14,42 +14,6 @@ class DashboardController extends ResourceController
             return $this->failForbidden('You do not have permission to access the dashboard.');
         }
 
-        // return $this->respond(['message' => 'Welcome to the Dashboard']);
-        // return $this->respond([
-        //     'message' => 'Welcome to the Dashboard!',
-        //     'Security' => [
-        //         'JWT Authentication (JSON Web Token)' => 'Authorization',
-        //         'Role Access Control User' => 'Endpoint Filtering',
-        //         'Validation' => 'Validasi input pada setiap form',
-        //         'HTTP Header' => 'meminimalisir serangan dari protocol HTTP',
-        //         'ORM' => 'meminimalisir serangan Query'
-        //     ],
-        //     'description' => 'API ini menyediakan layanan CRUD untuk produk dan manajemen pengguna dengan peran khusus.',
-        //     'access_roles' => [
-        //         'admin' => 'Hanya dapat mengakses endpoint untuk mengelola produk (CRUD).',
-        //         'user' => 'Hanya dapat mengakses halaman dashboard.',
-        //     ],
-        //     'routes' => [
-        //         'Auth' => [
-        //             'POST /auth/login' => 'Login dan dapatkan token JWT untuk autentikasi.'
-        //         ],
-        //         'Dashboard' => [
-        //             'GET /dashboard' => 'Menampilkan halaman informasi umum (hanya untuk role user).'
-        //         ],
-        //         'Products' => [
-        //             'GET /products' => 'Mendapatkan daftar produk (hanya untuk role admin).',
-        //             'POST /products' => 'Menambahkan produk baru (hanya untuk role admin).',
-        //             'GET /products/{id}' => 'Mendapatkan daftar produk berdasarkan ID (hanya untuk role admin).',
-        //             'PUT /products/{id}' => 'Mengupdate data produk berdasarkan ID (hanya untuk role admin).',
-        //             'DELETE /products/{id}' => 'Menghapus produk berdasarkan ID (hanya untuk role admin).',
-        //         ],
-        //         'Usage' => [
-        //             'Authorization' => 'Gunakan header "Authorization: Bearer <token>" untuk autentikasi di semua endpoint.',
-        //             'Note' => 'Hanya admin yang bisa mengakses endpoint produk.'
-        //         ],
-        //     ]
-        // ]);
-
         $data = [
             [
                 'category' => 'Auth',

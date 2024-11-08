@@ -1,3 +1,54 @@
+<p><strong>INSTALL :</strong></p>
+
+-   Clone Code
+-   Open terminal, cd to directory project and run <strong>"composer install"</strong>
+-   Create <strong>"Database"</strong> in MySQL
+-   Copy <strong>"env"</strong> and rename to <strong>".env"</strong>
+-   Edit <strong>"Connection Database"</strong> in <strong>.env</strong>
+-   Open terminal, run <strong>"php spark make:migration create_users_table"</strong>
+-   Run <strong>"php spark make:migration create_products_table"</strong>
+-   Run <strong>"php spark db:seed UserSeeder"</strong>
+-   Run <strong>"php spark db:seed ProductSeeder"</strong>
+-   Run <strong>"php spark serve"</strong>
+
+<hr/>
+<p>
+<strong>"Security"</strong>
+-   "JWT Authentication (JSON Web Token)": "Authorization",
+-    "Role Access Control User": "Endpoint Filtering",
+-   "Validation": "Validasi input pada setiap form",
+-   "HTTP Header": "meminimalisir serangan dari protocol HTTP",
+-   "ORM": "meminimalisir serangan Query"
+		
+<strong>"Description"</strong>
+-   "API ini menyediakan layanan CRUD untuk produk dan manajemen pengguna dengan peran khusus.",
+
+<strong>"Access Roles"</strong>
+-   "admin": "Hanya dapat mengakses endpoint untuk mengelola produk (CRUD).",
+-   "user": "Hanya dapat mengakses halaman dashboard."
+
+<strong>"Usage"</strong>
+-   "Authorization": "Gunakan header \"Authorization: Bearer <token>\" untuk autentikasi di semua endpoint.",
+-   "Note": "Hanya admin yang bisa mengakses endpoint produk."
+
+<strong>"Route"</strong>
+
+Auth
+-  'POST /auth/login' => 'Login dan dapatkan token JWT untuk autentikasi.'
+
+Dashboard
+-   'GET /dashboard' => 'Menampilkan halaman informasi umum (hanya untuk role user).'
+
+Products
+-   'GET /products' => 'Mendapatkan daftar produk (hanya untuk role admin).',
+-   'POST /products' => 'Menambahkan produk baru (hanya untuk role admin).',
+-   'GET /products/{id}' => 'Mendapatkan daftar produk berdasarkan ID (hanya untuk role admin).',
+-  'PUT /products/{id}' => 'Mengupdate data produk berdasarkan ID (hanya untuk role admin).',
+-  'DELETE /products/{id}' => 'Menghapus produk berdasarkan ID (hanya untuk role admin).',
+<hr/>
+
+
+
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
