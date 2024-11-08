@@ -12,39 +12,43 @@
 -   Run <strong>"php spark serve"</strong>
 
 <hr/>
-<p>
 <strong>"Security"</strong>
 -   "JWT Authentication (JSON Web Token)": "Authorization",
 -    "Role Access Control User": "Endpoint Filtering",
 -   "Validation": "Validasi input pada setiap form",
 -   "HTTP Header": "meminimalisir serangan dari protocol HTTP",
 -   "ORM": "meminimalisir serangan Query"
-		
+
+<hr/>
 <strong>"Description"</strong>
 -   "API ini menyediakan layanan CRUD untuk produk dan manajemen pengguna dengan peran khusus.",
 
+<hr/>
 <strong>"Access Roles"</strong>
 -   "admin": "Hanya dapat mengakses endpoint untuk mengelola produk (CRUD).",
 -   "user": "Hanya dapat mengakses halaman dashboard."
 
+<hr/>
 <strong>"Usage"</strong>
 -   "Authorization": "Gunakan header \"Authorization: Bearer <token>\" untuk autentikasi di semua endpoint.",
 -   "Note": "Hanya admin yang bisa mengakses endpoint produk."
 
+<hr/>
 <strong>"Route"</strong>
 
 Auth
--  'POST /auth/login' => 'Login dan dapatkan token JWT untuk autentikasi.'
+-  POST /auth/login => 'Login dan dapatkan token JWT untuk autentikasi
 
 Dashboard
--   'GET /dashboard' => 'Menampilkan halaman informasi umum (hanya untuk role user).'
+-  'GET /dashboard => 'Menampilkan halaman informasi umum (hanya untuk role user)
 
 Products
--   'GET /products' => 'Mendapatkan daftar produk (hanya untuk role admin).',
--   'POST /products' => 'Menambahkan produk baru (hanya untuk role admin).',
--   'GET /products/{id}' => 'Mendapatkan daftar produk berdasarkan ID (hanya untuk role admin).',
--  'PUT /products/{id}' => 'Mengupdate data produk berdasarkan ID (hanya untuk role admin).',
--  'DELETE /products/{id}' => 'Menghapus produk berdasarkan ID (hanya untuk role admin).',
+-   GET /products => 'Mendapatkan daftar produk (hanya untuk role admin)
+-   POST /products => 'Menambahkan produk baru (hanya untuk role admin)
+-   GET /products/{id} => 'Mendapatkan daftar produk berdasarkan ID (hanya untuk role admin)
+-  PUT /products/{id} => 'Mengupdate data produk berdasarkan ID (hanya untuk role admin)
+-  DELETE /products/{id} => 'Menghapus produk berdasarkan ID (hanya untuk role admin)
+
 <hr/>
 
 
