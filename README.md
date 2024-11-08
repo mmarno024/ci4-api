@@ -82,7 +82,7 @@ Product Update
 ![Product Update](public/assets/8.products-update.jpg)
 
 Product Delete
-![Product Delete](public/assets/9.delete.jpg)
+![Product Delete](public/assets/9.products-delete.jpg)
 
 DataTable Server Side
 ![DataTable Server Side](public/assets/10.data-table-server-side.jpg)
