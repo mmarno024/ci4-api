@@ -57,15 +57,35 @@ Products
 
 ## Screen Shoot
 
+Login
 ![Login](public/assets/1.login.jpg)
+
+Dashboard - OK
 ![Dashboard - OK](public/assets/2.dashboard-ok.jpg)
+
+Dashboard - Failed
 ![Dashboard - Failed](public/assets/3.dashboard-fail.jpg)
+
+Product List - OK
 ![Product List - OK](public/assets/4.products-list-ok.jpg)
+
+Product List - Failed
 ![Product List - Failed](public/assets/5.products-list-fail.jpg)
+
+Product Create
 ![Product Create](public/assets/6.products-create.jpg)
+
+Product By ID
 ![Product By ID](public/assets/7.products-by-id.jpg)
+
+Product Update
 ![Product Update](public/assets/8.products-update.jpg)
+
+Product Delete
 ![Product Delete](public/assets/9.delete.jpg)
+
+DataTable Server Side
+![DataTable Server Side](public/assets/10.data-table-server-side.jpg)
 
 
 # CodeIgniter 4 Application Starter
