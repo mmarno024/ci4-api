@@ -55,6 +55,18 @@ Products
 
 <hr/>
 
+## Screen Shoot
+
+![Login](public/assets/1.login.jpg)
+![Dashboard - OK](public/assets/2.dashboard-ok.jpg)
+![Dashboard - Failed](public/assets/3.dashboard-fail.jpg)
+![Product List - OK](public/assets/4.products-list-ok.jpg)
+![Product List - Failed](public/assets/5.products-list-fail.jpg)
+![Product Create](public/assets/6.products-create.jpg)
+![Product By ID](public/assets/7.products-by-id.jpg)
+![Product Update](public/assets/8.products-update.jpg)
+![Product Delete](public/assets/9.delete.jpg)
+
 
 # CodeIgniter 4 Application Starter
 
