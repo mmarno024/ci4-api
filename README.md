@@ -13,25 +13,25 @@
 
 <hr/>
 <strong>Security</strong>
--  JWT Authentication (JSON Web Token): Authorization,
--  Role Access Control User: Endpoint Filtering,
--  Validation: Validasi input pada setiap form,
--  HTTP Header: meminimalisir serangan dari protocol HTTP,
--  ORM: meminimalisir serangan Query
+- JWT Authentication (JSON Web Token): Authorization
+- Role Access Control User: Endpoint Filtering
+- Validation: Validasi input pada setiap form
+- HTTP Header: meminimalisir serangan dari protocol HTTP
+- ORM: meminimalisir serangan Query
 
 <hr/>
 <strong>Description</strong>
--  API ini menyediakan layanan CRUD untuk produk dan manajemen pengguna dengan peran khusus.,
+- API ini menyediakan layanan CRUD untuk produk dan manajemen pengguna dengan peran khusus
 
 <hr/>
 <strong>Access Roles</strong>
--  admin: Hanya dapat mengakses endpoint untuk mengelola produk (CRUD).,
--  user: Hanya dapat mengakses halaman dashboard.
+- admin: Hanya dapat mengakses endpoint untuk mengelola produk (CRUD)
+- user: Hanya dapat mengakses halaman dashboard
 
 <hr/>
 <strong>Usage</strong>
--  Authorization: Gunakan header \Authorization: Bearer <token>\ untuk autentikasi di semua endpoint.,
--  Note: Hanya admin yang bisa mengakses endpoint produk.
+- Authorization: Gunakan header \Authorization: Bearer <token>\ untuk autentikasi di semua endpoint
+- Note: Hanya admin yang bisa mengakses endpoint produk
 
 <hr/>
 <strong>Route</strong>
